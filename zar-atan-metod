@@ -1,0 +1,28 @@
+//Soru 2: Zar atan metod
+
+int ZarAt()
+{
+    Random rnd = new Random();
+    int zar= rnd.Next(1, 7);
+    return zar;
+}
+
+//Soru 2: Altı Altı gelinceye kadar calissin...
+Console.WriteLine(ZarAt());
+
+void AltıAltıGelinceyeKadarZarAt()
+{
+    int zar1, zar2;
+
+    do
+    {
+        zar1 = ZarAt();
+        zar2 = ZarAt();
+        Console.WriteLine($"{zar1} {zar2}");
+
+        if (zar1 == 6 && zar2 == 6) break;
+    }while(true);
+    
+}
+
+AltıAltıGelinceyeKadarZarAt();
