@@ -2,3 +2,18 @@
   7 = 111
 
  // a+b b+a
+ 
+ //Soru 3:taban cevirme (10=>2)
+
+Console.WriteLine("10'lu tabandaki sayiyi giriniz");
+int sayi=int.Parse(Console.ReadLine());
+
+string ikiliSayi = "";
+
+while (sayi > 0)
+{
+    ikiliSayi = (sayi % 2).ToString() +ikiliSayi;
+    sayi = sayi / 2;
+}
+
+Console.WriteLine(ikiliSayi);
