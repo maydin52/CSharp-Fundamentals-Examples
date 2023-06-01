@@ -1,0 +1,42 @@
+//Soru 4:1-100 arasında 20 sayıdan kaç tanesi tek kaç tanesi cift?
+
+int[] RastgeleSayilar(int min, int max,int adet)
+{
+    int[] sayilar = new int[adet];
+
+    for (int i = 0; i < adet; i++)
+    {
+        sayilar[i] = new Random().Next(min,max+1);
+    }
+
+    return sayilar;
+}
+
+void SayilariGoster(int[] sayilar)
+{ 
+    foreach(int sayi in sayilar)
+        Console.Write(sayi + " ");
+    Console.WriteLine();
+}
+
+int[] TekCiftSayilarKacTane(int[] sayilar)
+{
+    int[] tekCift = new int[2];
+
+    foreach(int sayi in sayilar)
+    {
+        tekCift[sayi % 2]++;
+    }
+    return tekCift;
+
+}
+
+int[] dizi = RastgeleSayilar(1, 100, 20);
+SayilariGoster(dizi);
+foreach(int sayi in TekCiftSayilarKacTane(dizi))
+    Console.WriteLine(sayi);
+
+
+//SayilariGoster(RastgeleSayilar(1, 50, 10));
+//SayilariGoster(RastgeleSayilar(10, 30, 5));
+//SayilariGoster(RastgeleSayilar(1, 100, 5000));
