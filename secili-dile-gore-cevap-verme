@@ -1,0 +1,60 @@
+//Soru : Kullanıcı dil secmeli Turkce ve Ingilizce diye sonra ona gore "Merhaba veya Hello" yazan kodu yazınız?
+//Dil MENU su olacak...
+//Surekli olarak sorsun...Çıkıncaya kadar...
+
+//for (; ; )
+//{
+//    Console.WriteLine("MENU");
+//    Console.WriteLine("1-Turkçe");
+//    Console.WriteLine("2-English");
+//    Console.WriteLine("3-Çıkış");
+
+//    int secim=int.Parse(Console.ReadLine());
+//    if (secim == 3)
+//        break;
+//}
+
+//Olur fakat biraz karmaşık...
+
+//Console.WriteLine("MENU");
+//Console.WriteLine("1-Turkçe");
+//Console.WriteLine("2-English");
+//Console.WriteLine("3-Çıkış");
+//int secim= int.Parse(Console.ReadLine());
+
+//while (secim !=3)
+//{
+//    Console.WriteLine("MENU");
+//    Console.WriteLine("1-Turkçe");
+//    Console.WriteLine("2-English");
+//    Console.WriteLine("3-Çıkış");
+
+//     secim = int.Parse(Console.ReadLine());
+//    if (secim == 3)
+//        break;
+//}
+
+int secim;
+do
+{
+    Console.WriteLine("MENU");
+    Console.WriteLine("1-Turkçe");
+    Console.WriteLine("2-English");
+    Console.WriteLine("3-Çıkış");
+
+    secim = int.Parse(Console.ReadLine());
+    switch (secim)
+    {
+        case 1:
+            Console.WriteLine("Merhaba");
+            break;
+        case 2:
+            Console.WriteLine("Hello");
+            break;
+        case 3:
+            break;
+        default:
+            Console.WriteLine("Tanımlı olmayan dil...");
+            break;
+    }
+}while(secim !=3);
