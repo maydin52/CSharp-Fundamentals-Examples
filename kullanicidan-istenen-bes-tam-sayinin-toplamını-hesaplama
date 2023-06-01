@@ -1,0 +1,11 @@
+//Soru : Kullanıcı tarafından girilen 5 tam sayının toplamını alan kodu yazınız?
+
+int toplam = 0;
+
+for (int i = 0; i < 5; i++)
+{
+    Console.Write($"{i + 1}. sayiyi giriniz");
+    int sayi = int.Parse(Console.ReadLine());
+    toplam += sayi;
+}
+Console.WriteLine("Sayıların toplamı={0}",toplam);
