@@ -1,0 +1,11 @@
+//int sayi = int.Parse(Console.ReadLine());
+
+//int number;
+//bool kontrol = int.TryParse(Console.ReadLine(), out number);
+//if (kontrol)
+//    Console.WriteLine(number);
+
+
+bool kontrol = int.TryParse(Console.ReadLine(), out int sayi);
+if (kontrol)
+    Console.WriteLine(sayi);
