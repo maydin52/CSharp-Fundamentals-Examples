@@ -1,0 +1,12 @@
+1)Bir satýs firmasýnda tam zamanlý ve yarý zamanlý personeller calismaktadir...Tam zamanlý calisanlarýn maaslarý taban ucret + prim þeklinde hesaplanmaktadýr...
+Tam zamanlý personellerin primi(yaptýðý satýþýn);
+   0-50000 arasý yuzde 1
+   50000 - 150000 arasý yuzde 2
+   150000 den buyukse yuzde 3
+
+Yarý zamanlý personelin maasý ise;
+  calistigi saat * saat ucreti + prim þeklinde hesaplanmaktadýr...
+
+  Prim ise; yaptýðý satýþýn yuzde 1 
+
+2)Yukarýdaki problemi 3 personel için yapýnýz?
