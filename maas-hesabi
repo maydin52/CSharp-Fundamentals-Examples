@@ -10,3 +10,183 @@ Yarý zamanlý personelin maasý ise;
   Prim ise; yaptýðý satýþýn yuzde 1 
 
 2)Yukarýdaki problemi 3 personel için yapýnýz?
+
+
+
+//Soru 1:
+
+int personelTipi; //1-Tam zamanlı 2-Yarı zamanlı
+double tabanUcret,prim=0,saatUcreti,yapılanSatis;
+int calisilanSaat;
+
+
+Console.WriteLine("Personel tipini giriniz");
+Console.WriteLine("1-Tam zamanlı 2-Yarı zamanlı");
+personelTipi = int.Parse(Console.ReadLine());
+
+if (personelTipi == 1)
+{
+    //Tam zamanlı ise
+    Console.WriteLine("Taban ücreti giriniz");
+    tabanUcret = double.Parse(Console.ReadLine());
+    Console.WriteLine("Yapılan satiş miktarını giriniz");
+    yapılanSatis = double.Parse(Console.ReadLine());
+    if (yapılanSatis < 50000)
+        prim = yapılanSatis * 0.01;
+    else if (yapılanSatis >= 50000 && yapılanSatis < 150000)
+        prim = yapılanSatis * 0.02;
+    else if (yapılanSatis >= 150000)
+        prim = yapılanSatis * 0.03;
+    else
+        Console.WriteLine("Geçerli bir deger giriniz");
+
+    Console.WriteLine($"Personelin Maasi ={tabanUcret+prim}");
+}
+else if (personelTipi == 2)
+{
+    //Yarı zamanlı
+
+    Console.WriteLine("Calistigi saati giriniz");
+    calisilanSaat = int.Parse(Console.ReadLine());
+
+    Console.WriteLine("Saat ücretini giriniz");
+    saatUcreti = double.Parse(Console.ReadLine());
+
+    Console.WriteLine("Yapılan satiş miktarını giriniz");
+    yapılanSatis = double.Parse(Console.ReadLine());
+    
+    prim = yapılanSatis * 0.01;
+   
+    
+    Console.WriteLine($"Yarı zamanlı personelin Maasi ={(calisilanSaat * saatUcreti) + prim}");
+
+}
+else
+{
+    Console.WriteLine("Geçerli personel tipi seciniz...");
+}
+
+
+//Soru 1: tip string olarak alınırsa....
+
+
+string personelTipi; //tam yarı
+double tabanUcret, prim = 0, saatUcreti, yapılanSatis;
+int calisilanSaat;
+
+
+Console.WriteLine("Personel tipini giriniz");
+Console.WriteLine("1-tam  2-yarı");
+personelTipi = Console.ReadLine();
+
+if (personelTipi == "tam")
+{
+    //Tam zamanlı ise
+    Console.WriteLine("Taban ücreti giriniz");
+    tabanUcret = double.Parse(Console.ReadLine());
+    Console.WriteLine("Yapılan satiş miktarını giriniz");
+    yapılanSatis = double.Parse(Console.ReadLine());
+    if (yapılanSatis < 50000)
+        prim = yapılanSatis * 0.01;
+    else if (yapılanSatis >= 50000 && yapılanSatis < 150000)
+        prim = yapılanSatis * 0.02;
+    else if (yapılanSatis >= 150000)
+        prim = yapılanSatis * 0.03;
+    else
+        Console.WriteLine("Geçerli bir deger giriniz");
+
+    Console.WriteLine($"Personelin Maasi ={tabanUcret + prim}");
+}
+else if (personelTipi == "yari")
+{
+    //Yarı zamanlı
+
+    Console.WriteLine("Calistigi saati giriniz");
+    calisilanSaat = int.Parse(Console.ReadLine());
+
+    Console.WriteLine("Saat ücretini giriniz");
+    saatUcreti = double.Parse(Console.ReadLine());
+
+    Console.WriteLine("Yapılan satiş miktarını giriniz");
+    yapılanSatis = double.Parse(Console.ReadLine());
+
+    prim = yapılanSatis * 0.01;
+
+
+    Console.WriteLine($"Yarı zamanlı personelin Maasi ={(calisilanSaat * saatUcreti) + prim}");
+
+}
+else
+{
+    Console.WriteLine("Geçerli personel tipi seciniz...");
+}
+
+------------------------------------------------------
+//Soru 2: Maas hesaplama dongu ile...
+
+//Soru 1:
+
+while (true)
+{
+
+    int personelTipi; //1-Tam zamanlı 2-Yarı zamanlı
+    double tabanUcret, prim = 0, saatUcreti, yapılanSatis;
+    int calisilanSaat;
+
+
+    Console.WriteLine("Personel tipini giriniz");
+    Console.WriteLine("1-Tam zamanlı 2-Yarı zamanlı");
+    personelTipi = int.Parse(Console.ReadLine());
+
+    if (personelTipi == 1)
+    {
+        //Tam zamanlı ise
+        Console.WriteLine("Taban ücreti giriniz");
+        tabanUcret = double.Parse(Console.ReadLine());
+        Console.WriteLine("Yapılan satiş miktarını giriniz");
+        yapılanSatis = double.Parse(Console.ReadLine());
+        if (yapılanSatis < 50000)
+            prim = yapılanSatis * 0.01;
+        else if (yapılanSatis >= 50000 && yapılanSatis < 150000)
+            prim = yapılanSatis * 0.02;
+        else if (yapılanSatis >= 150000)
+            prim = yapılanSatis * 0.03;
+        else
+            Console.WriteLine("Geçerli bir deger giriniz");
+
+        Console.WriteLine($"Personelin Maasi ={tabanUcret + prim}");
+    }
+    else if (personelTipi == 2)
+    {
+        //Yarı zamanlı
+
+        Console.WriteLine("Calistigi saati giriniz");
+        calisilanSaat = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Saat ücretini giriniz");
+        saatUcreti = double.Parse(Console.ReadLine());
+
+        Console.WriteLine("Yapılan satiş miktarını giriniz");
+        yapılanSatis = double.Parse(Console.ReadLine());
+
+        prim = yapılanSatis * 0.01;
+
+
+        Console.WriteLine($"Yarı zamanlı personelin Maasi ={(calisilanSaat * saatUcreti) + prim}");
+
+    }
+    else
+    {
+        Console.WriteLine("Geçerli personel tipi seciniz...");
+    }
+
+
+    //En sonda devam etsin mi etmesin mi?
+    Console.WriteLine("Devam etmek istiyor musunuz?[E/H]");
+
+    string secim =Console.ReadLine();
+    if (secim == "H" || secim == "h")
+        break;
+}
+
+
