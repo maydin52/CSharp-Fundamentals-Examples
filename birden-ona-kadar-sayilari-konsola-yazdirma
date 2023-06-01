@@ -1,0 +1,18 @@
+            // 1 den 10 'a kadar olan sayıları alt alta ekrana yazdıran programı kodlayınız..
+            // 1 den 10 'a kadar olan sayılardan çift olanlarını ekrana yazdırmak istiyorum...
+
+
+           /*for(int i = 1; i<=10; i++)
+            {
+                Console.WriteLine(i);
+            }
+
+            Console.ReadLine();*/
+
+
+            for(int a = 0; a<=10; a=a+2)
+            {
+                Console.WriteLine(a);
+            }
+
+            Console.ReadLine();
