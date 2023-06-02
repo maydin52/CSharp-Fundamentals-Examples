@@ -1,0 +1,11 @@
+            // Bir dizi içindeki karakterlerden 7 haneli şifre üreten
+
+            char[] charArray = {'A', 'B', 'C', 'a', 'b', 'c', '!', '@', '?', '-'};
+
+            for (int i = 1; i <=7; i++)
+            {
+                Random random = new Random();
+                int randomChar = random.Next(0,9);
+                Console.Write("{0}", charArray[randomChar]);
+
+            }
