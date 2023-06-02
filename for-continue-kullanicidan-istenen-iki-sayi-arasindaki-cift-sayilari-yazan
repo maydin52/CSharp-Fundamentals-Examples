@@ -1,0 +1,23 @@
+            // Kullanıcıdan istenen 2 sayı arasındaki çift sayıları yazan - for ve continue kullanarak
+
+            int girilenIlkSayi, girilenSonSayi;
+
+
+            Console.Write("ilk sayıyı giriniz : ");
+            girilenIlkSayi = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Son sayıyı giriniz : ");
+            girilenSonSayi = Convert.ToInt32(Console.ReadLine());
+
+
+            for (int i = girilenIlkSayi; i <= girilenSonSayi; i++)
+            {
+                if (i % 2 == 1)
+                {
+                    continue;
+                }
+                else
+                {
+                    Console.WriteLine("{0}" , i);
+                }
+            }
