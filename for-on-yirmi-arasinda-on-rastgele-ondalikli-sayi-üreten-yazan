@@ -1,0 +1,13 @@
+            // 10-20 arasında 10 tane rastgele sayı üreten ve yazan
+
+            for (int i = 1; i <= 10; i++)
+            {
+                int rastgeleSayiInt;
+                double rastgeleSayiDouble;
+
+                Random random = new Random();
+                rastgeleSayiInt = random.Next(1000,2001);
+                rastgeleSayiDouble = rastgeleSayiInt / 100.0;
+
+                Console.WriteLine("{0,2}. rastgele sayı : {1}", i , rastgeleSayiDouble);
+            }
