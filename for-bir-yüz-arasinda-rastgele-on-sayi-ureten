@@ -1,0 +1,11 @@
+            // 1-100 arasında rastgele 10 sayı üreten
+            
+            for (int i = 1; i <= 10; i++)
+            {
+                int rastgeleSayi;
+
+                Random random = new Random();
+                rastgeleSayi = random.Next(1,101);
+
+                Console.Write("{0,2}. sayı : {1}\n" , i , rastgeleSayi);
+            }
