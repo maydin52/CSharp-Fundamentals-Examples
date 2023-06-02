@@ -1,0 +1,41 @@
+            // Fenerbahçe ve Galatasaray arasında oynanan 5 maçın ve sonucun gösterilmesi
+            
+            int gs = 0;
+            int fb = 0;
+
+            for (int i = 1; i <= 5; i++)
+            {
+                Random random = new Random();
+                int gR = random.Next(6);
+                int fR = random.Next(6);
+
+                if (fR > gR)
+                {
+                    fb++;
+                    //fb = fb + 1;
+                }
+                else if (gR > fR)
+                {
+                    gs++;
+                    //gs = gs + 1;
+                }
+                Console.WriteLine("Fenerbahçe : {0} - Galatasaray : {1}" , fR , gR);
+            }
+
+            if (fb > gs)
+            {
+                Console.WriteLine("\nKazanan takım {0} maç ile Fenerbahçe", fb);
+                Console.WriteLine("Fenerbahçe : {0} - Galatasaray : {1}", fb, gs);
+            }
+            else if (fb < gs)
+            {
+                Console.WriteLine("\nKazanan takım {0} maç ile Galatasaray", gs);
+                Console.WriteLine("Fenerbahçe : {0} - Galatasaray : {1}", fb, gs);
+            }
+            else
+            {
+                Console.WriteLine("\nKazanan takım yok.");
+                Console.WriteLine("Fenerbahçe : {0} - Galatasaray : {1}", fb, gs);
+            }
+
+            Console.ReadLine();
