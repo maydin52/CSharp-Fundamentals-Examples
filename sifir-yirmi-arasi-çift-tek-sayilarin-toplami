@@ -1,0 +1,18 @@
+            //0 ile 20 arasındaki çift sayıların ve tek sayılaın toplamı
+
+            int ciftSayilarToplami = 0, tekSayilarToplami = 0;
+
+            for (int i = 0; i <= 20; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    ciftSayilarToplami = ciftSayilarToplami + i;
+                }
+                else 
+                {
+                    tekSayilarToplami = tekSayilarToplami + i;
+                }
+            }
+
+            Console.WriteLine("Çift sayıların toplamı {0}", ciftSayilarToplami);
+            Console.WriteLine("Tek sayıların toplamı {0}", tekSayilarToplami);
