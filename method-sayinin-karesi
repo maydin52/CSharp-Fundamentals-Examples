@@ -1,0 +1,8 @@
+//Soru 4: Bir sayının karesini alan metodu yazınız?
+
+int KareAl(int sayi)
+{
+    return sayi * sayi;
+}
+
+Console.WriteLine(KareAl(3));
