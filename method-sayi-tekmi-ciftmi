@@ -21,3 +21,16 @@ string SayiTekMiCiftMi(int sayi)
 
 Console.WriteLine(SayiTekMiCiftMi(11));
 Console.WriteLine(SayiTekMiCiftMi(56));
+
+-------------------------------------------------
+
+  //Soru 1:Kullanıcı tarafından girilen bir tam sayının tek veya cift olduğunu bulan kodu yazınız?
+
+//int sayi;
+Console.WriteLine("Bir sayı giriniz?");
+int sayi = Convert.ToInt32(Console.ReadLine());
+
+if (sayi % 2 == 1)
+    Console.WriteLine("Sayı Tektir...");
+else
+    Console.WriteLine("Sayi Cifttir");
