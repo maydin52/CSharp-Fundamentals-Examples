@@ -1,0 +1,11 @@
+//Soru 1: Dairenin alanını hesaplayan metodu yazınız? (pi*r*r)
+
+double DaireAlaniHesapla(double r)
+{
+    return Math.PI * r * r;
+}
+
+
+Console.WriteLine("r giriniz");
+double yaricap = double.Parse(Console.ReadLine());
+Console.WriteLine(DaireAlaniHesapla(yaricap));
