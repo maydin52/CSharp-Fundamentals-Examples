@@ -1,0 +1,19 @@
+//Soru 2: Silindirin hacmini hesaplayan metodu yazınız? (pi*r*r*h)
+
+double DaireAlaniHesapla(double r)
+{
+    return Math.PI * r * r;
+}
+
+
+Console.WriteLine("r giriniz");
+double yaricap = double.Parse(Console.ReadLine());
+Console.WriteLine(DaireAlaniHesapla(yaricap));
+
+double SilindirHacimHesapla(double r, double h)
+{ 
+    //return Math.PI * r * r * h;
+    return DaireAlaniHesapla(r) * h;
+}
+
+Console.WriteLine(SilindirHacimHesapla(3,10));
