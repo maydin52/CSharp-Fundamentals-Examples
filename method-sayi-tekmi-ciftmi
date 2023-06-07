@@ -1,0 +1,23 @@
+//Soru 3:bir sayının tek mi cift mi olduğunu bulan metodu yazınız?
+
+bool SayiTekmi(int sayi)
+{
+    //return sayi % 2==1;
+    //return sayi % 2 ==0 ? true : false;
+
+    bool kontrol=false; 
+    if(sayi % 2==1)
+        kontrol=true;
+    return kontrol;
+}
+
+Console.WriteLine(SayiTekmi(11));
+Console.WriteLine(SayiTekmi(14));
+
+string SayiTekMiCiftMi(int sayi)
+{
+    return sayi % 2 == 0 ? "cift" : "tek";
+}
+
+Console.WriteLine(SayiTekMiCiftMi(11));
+Console.WriteLine(SayiTekMiCiftMi(56));
