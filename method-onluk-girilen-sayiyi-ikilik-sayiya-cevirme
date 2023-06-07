@@ -1,0 +1,25 @@
+//Soru 5: Girilen sayıyı(10 lu duzende) ikili sayı sistemine ceviren metodu yazınız?
+
+string İkiliSayiyaCevir(int sayi)
+{
+    string binary = "";
+    while (sayi > 0)
+    {
+        binary = (sayi % 2).ToString() + binary;
+        sayi = sayi / 2;
+
+        //Console.WriteLine(sayi + " " + binary);
+    }
+    return binary;
+}
+Console.WriteLine("--------");
+Console.WriteLine(İkiliSayiyaCevir(10));
+Console.WriteLine("--------");
+Console.WriteLine(İkiliSayiyaCevir(7));
+
+Console.WriteLine("--------");
+Console.WriteLine(İkiliSayiyaCevir(78963));
+
+//Console.WriteLine(Console.WriteLine());
+//int sayi = Console.ReadLine();
+
