@@ -8,21 +8,31 @@ int ZarAt()
 }
 
 //Soru 2: Altı Altı gelinceye kadar calissin...
-Console.WriteLine(ZarAt());
+//Console.WriteLine(ZarAt());
 
 void AltıAltıGelinceyeKadarZarAt()
 {
     int zar1, zar2;
 
+
+    int sayac = 0;
+
     do
     {
         zar1 = ZarAt();
         zar2 = ZarAt();
-        Console.WriteLine($"{zar1} {zar2}");
+        //Console.WriteLine($"{zar1} {zar2}");
+        Console.WriteLine($"{sayac = sayac + 1}. deneme : {zar1};{zar2}");
+        
 
-        if (zar1 == 6 && zar2 == 6) break;
-    }while(true);
+        if (zar1 == 6 && zar2 == 6) 
+        break;
+    }
+    while(true);
     
 }
 
 AltıAltıGelinceyeKadarZarAt();
+
+
+
