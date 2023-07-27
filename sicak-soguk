@@ -1,0 +1,33 @@
+#region SıcakSoguk
+
+
+Random rdm = new Random();
+int bilgisayarinTuttugu = rdm.Next(0, 10);
+
+Console.WriteLine("0 10 arasında PC bir rakam tuttu.");
+Console.WriteLine("0 ile 9 arasında bir rakam giriniz");
+int insaninTuttugu = int.Parse(Console.ReadLine());
+int islemAdeti = 1;
+
+
+while (bilgisayarinTuttugu != insaninTuttugu)
+{
+
+  int fark = Math.Abs(bilgisayarinTuttugu - insaninTuttugu); // mutlak değer +-2
+
+  if (fark > 2)
+    Console.WriteLine("Soğuk");
+  else
+    Console.WriteLine("Sıcak");
+
+  Console.WriteLine("0 ile 9 arasında bir rakam giriniz");
+  insaninTuttugu = int.Parse(Console.ReadLine());
+  islemAdeti++;
+}
+
+Console.WriteLine($"{islemAdeti} kadar denemede sayı buldunuz tebrikler");
+
+
+
+
+#endregion
