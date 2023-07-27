@@ -1,0 +1,48 @@
+// klavyeden girilen 3 değere göre üçgenin eşkenar ikizkenar yoksa çeşit kenar üçgen mi olduğunu bulan programın algoritması (kenar değ 0 dan büyük olmaldır)
+
+
+int kenar1 = 0, kenar2 = 0, kenar3 = 0;
+
+//for (int i = 1; i <= 3; i++)
+//{
+//  Console.WriteLine($"{i}.kenarı giriniz");
+//  int sayi = int.Parse(Console.ReadLine());
+
+//  switch (i)
+//  {
+//    case 1:
+//      kenar1 = sayi;
+//      break;
+//    case 2:
+//      kenar2 = sayi;
+//      break;
+//    case 3:
+//      kenar3 = sayi;
+//      break;
+//    default:
+//      break;
+//  }
+
+//}
+
+Console.WriteLine("kenar1 giriniz");
+kenar1 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("kenar2 giriniz");
+kenar2 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("kenar3 giriniz");
+kenar3 = int.Parse(Console.ReadLine());
+
+if (kenar1 == kenar2 && kenar1 == kenar3)
+{
+  Console.WriteLine("Eşkenar");
+}
+else if (kenar1 == kenar2 || kenar1 == kenar3 || kenar2 == kenar3)
+{
+  Console.WriteLine("ikizkenar");
+}
+else
+{
+  Console.WriteLine("Çeşit kenar");
+}
