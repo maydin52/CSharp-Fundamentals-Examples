@@ -1,0 +1,44 @@
+// Girilen sayı asal mı ? sadece 1 ve kendine bölümü olan (herhangi başka bir böleni olmayan sayılar)
+
+// 15 1,3,5,15
+
+#region AsalSayı
+
+/*
+
+bool asalMi = true;
+Console.WriteLine("Bir sayı giriniz");
+int sayi = int.Parse(Console.ReadLine());
+
+
+
+asalMi = sayi < 0 ? false : true;
+// sayi sıfırdan küçükse asallık bozuldu
+
+// 9 için 7 işlem
+// 99 için 97 adet işlem
+
+
+
+for (int i = 2; i < sayi; i++)
+{
+  
+    // 15/2 (15/3 kalan 0 asallık bozuldu)
+
+  // sayı 0 dan büyük ise 2 den başla kendine kadar olan sayılardan birine bölümü 0 kalanını veriyorsa asallığı boz.
+    if (sayi % i == 0 && sayi != 2)
+    {
+      asalMi = false;
+      break; // döngünün gereksiz adet dönmesini engellemek için break
+    }
+  
+   
+}
+
+
+string sonuc = asalMi ? "asal" : "asal değildir";
+Console.WriteLine($"{sayi} {sonuc}");
+
+*/
+
+#endregion
