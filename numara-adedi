@@ -1,0 +1,21 @@
+/ 4. Klavyeden girilen bir metnin içerisinde kaç adet rakam olduğunu bulan algoritma
+// 34 TK 456 => 5 adet rakamdan oluşur
+
+Console.WriteLine("Plaka giriniz");
+string plaka = Console.ReadLine();
+char[] karakterler = plaka.ToCharArray(); // {'a','l','i'}
+
+int numaraAdet = 0;
+for (int i = 0; i < karakterler.Length; i++)
+{
+
+  if (char.IsNumber(karakterler[i]))
+  {
+    numaraAdet++;
+    Console.WriteLine(karakterler[i]);
+  }
+
+  
+}
+
+Console.WriteLine($"Toplam {numaraAdet} numara vardır");
