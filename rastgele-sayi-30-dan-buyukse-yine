@@ -1,0 +1,13 @@
+// Rastgele sayı üreteceğiz üretilen sayı 30 dan küçük ise tekrar sayı üretelim
+
+/*
+
+Random rdm = new Random();
+int rastgeleSayi = rdm.Next(0, 50); // 0 dahil 50 dahil değil (0-49)
+
+
+while (rastgeleSayi < 30)
+{
+  Console.WriteLine($"{rastgeleSayi}");
+  rastgeleSayi = rdm.Next(0, 32);
+}
