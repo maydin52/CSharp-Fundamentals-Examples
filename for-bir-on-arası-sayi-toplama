@@ -1,0 +1,20 @@
+// 1 ile 10 arasındaki sayıların toplamını bulan programın algotirmasını bulalım
+
+#region Ornek2
+
+/*
+
+int toplam = 0;
+for (int i = 1; i <=10; i++)
+{
+ 
+  toplam = toplam + i;
+
+  //Console.WriteLine($"toplam {toplam}");
+}
+
+Console.WriteLine($"toplam {toplam}");
+
+*/
+
+#endregion
