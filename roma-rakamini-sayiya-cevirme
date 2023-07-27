@@ -1,0 +1,27 @@
+/*
+
+string value = "LVIII";
+char[] charArray = value.ToCharArray();
+int toplam = 0;
+
+foreach (var ch in charArray)
+{
+  switch (ch)
+  {
+    case 'L':
+      toplam += 50;
+      break;
+    case 'V':
+      toplam += 5;
+      break;
+    case 'I':
+      toplam++;
+      break;
+    default:
+      break;
+  }
+}
+
+Console.WriteLine($"sonuc {toplam}");
+
+*/
