@@ -1,0 +1,41 @@
+// Rastgele sayı üreteceğiz üretilen sayı 30 dan küçük ise tekrar sayı üretelim
+
+/*
+
+Random rdm = new Random();
+int rastgeleSayi = rdm.Next(0, 50); // 0 dahil 50 dahil değil (0-49)
+
+
+while (rastgeleSayi < 30)
+{
+  Console.WriteLine($"{rastgeleSayi}");
+  rastgeleSayi = rdm.Next(0, 32);
+}
+
+
+// üretilen rastgele sayılardan 5 e bölüenen sayıların toplamını ekrana yazdıran program
+
+int toplam = 0;
+
+// 5,10,15,17 (döngüden çıkar)
+
+while (rastgeleSayi % 5 == 0)
+{
+  // kodlar döngü sağladığı sürece çalışır
+
+  toplam += rastgeleSayi;
+  rastgeleSayi = rdm.Next(0, 32);
+ 
+}
+
+Console.WriteLine($"toplam {toplam}");
+
+*/
+
+// 5 sayısını tuttu 0,50 sayı bulunursa kaç denemede bulunduğu yazılsın
+// 6
+// ekrana girilen her bir denemeyi yazdıralım
+
+// bilgisayarın tutuğu sayı ile insantutugu sayı arasındaki fark 2 ve daha düşük ise ekrana sıcak (yaklaştın) daha fazla ise ekran soguk (uzaklaştın) yazdırıcak
+
+/*
