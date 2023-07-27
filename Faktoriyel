@@ -1,0 +1,32 @@
+#region Faktoriyel
+
+/*
+
+// Girilen sayının faktoriyelini hesaplama 5! 5.4.3.2
+
+Console.WriteLine("Faktoriyel sayısı giriniz");
+int faktoriyel = int.Parse(Console.ReadLine());
+int faktoriyelSonuc = 1; // çarpma işlemi yapıcam
+string formul = $"{faktoriyel}! => ";
+
+for (int i = faktoriyel; i >= 2; i--)
+{
+  faktoriyelSonuc *= i;
+  //faktoriyelSonuc = faktoriyelSonuc * i;
+
+  // 5.4.3.2 = 120
+  
+
+  if(i == 2) // son eleman algoritması
+    formul += $"{i} = {faktoriyelSonuc}";
+  else // diğer eleman algoritması
+    formul += $"{i}.";
+
+
+}
+
+Console.WriteLine($"{formul}");
+
+*/
+
+#endregion
