@@ -39,3 +39,5 @@ Console.WriteLine($"toplam {toplam}");
 // bilgisayarın tutuğu sayı ile insantutugu sayı arasındaki fark 2 ve daha düşük ise ekrana sıcak (yaklaştın) daha fazla ise ekran soguk (uzaklaştın) yazdırıcak
 
 /*
+
+
