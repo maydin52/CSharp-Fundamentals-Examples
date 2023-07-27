@@ -1,0 +1,25 @@
+#region FibonacciDizisi
+
+// fibonnaci dizi 1,1,2,3,5,8,13
+// sonuc 2
+
+double ilkDeger  = 1;
+double ikinciDeger = 1;
+double sonuc = 0;
+
+Console.WriteLine("Kaç elemanlı bir fibonnaci dizisi istersiniz ?");
+int adet = int.Parse(Console.ReadLine());
+
+
+for (int i = 0; i < adet; i++)
+{
+
+  ilkDeger = ikinciDeger;
+  ikinciDeger = sonuc;
+  sonuc = ilkDeger + ikinciDeger;
+
+  Console.WriteLine(sonuc);
+
+}
+
+#endregion
