@@ -1,0 +1,27 @@
+/*
+
+// 1 ile 100 arasındaki sayılardan 3'e bölğünenleri ekrana yazdıran programın algoritması
+// 3,6,9,12,15,18 ... 99
+
+
+for (int i = 1; i <=100; i++)
+{
+
+  if(i % 3 == 0)
+  {
+
+    // toplam = toplam + i;
+    Console.WriteLine($"sayı : {i}" );
+  }
+
+}
+
+// basamakları 3 er 3 er çıkmış
+for (int i = 3; i < 100; i+=3)
+{
+  Console.WriteLine($"sayı 2 : {i}");
+}
+
+*/
+
+#endregion
