@@ -38,6 +38,40 @@ Console.WriteLine($"toplam {toplam}");
 
 // bilgisayarın tutuğu sayı ile insantutugu sayı arasındaki fark 2 ve daha düşük ise ekrana sıcak (yaklaştın) daha fazla ise ekran soguk (uzaklaştın) yazdırıcak
 
+Random rdm = new Random();
+  int bilgisayarinTuttugu = rdm.Next(0, 10);
+  int insaninTuttugu = 0;
+  int islemAdeti = 1;
+
+  do
+  {
+ 
+    Console.WriteLine("0 10 arasında PC bir rakam tuttu.");
+    Console.WriteLine("0 ile 9 arasında bir rakam giriniz");
+    insaninTuttugu = int.Parse(Console.ReadLine());
+ 
+
+    int fark = Math.Abs(bilgisayarinTuttugu - insaninTuttugu); // mutlak değer +-2
+
+  if(fark == 0)
+  {
+    Console.WriteLine($"{islemAdeti} kadar denemede sayı buldunuz tebrikler");
+    break;
+  }
+    
+
+  if (fark > 2)
+      Console.WriteLine("Soğuk");
+    else
+      Console.WriteLine("Sıcak");
+
+
+    islemAdeti++;
+
+  }
+while (bilgisayarinTuttugu != insaninTuttugu); // değerler eşit değilse başa dön
+
+
 /*
 
 
