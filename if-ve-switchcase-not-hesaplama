@@ -1,0 +1,81 @@
+// 0-30 FF
+// 30-50 arası DD
+// 50-70 arası CC
+// 70-80 arası BB
+// 80-100 arası AA
+
+// 1 vize (%30) 1 final (%70)
+
+Console.WriteLine("Öğrenci ad soyad");
+string adSoyad = Console.ReadLine();
+
+Console.WriteLine("vize notunu giriniz");
+int vizeNotu = int.Parse(Console.ReadLine());
+
+Console.WriteLine("final notunu giriniz");
+int finalNotu = int.Parse(Console.ReadLine());
+
+double ortalama = (vizeNotu * 0.30) + (finalNotu * 0.70);
+
+if(ortalama >= 0 && ortalama <= 30)
+{
+  Console.WriteLine($"{adSoyad} kişisinin harf notu FF ortalaması {ortalama}'dır");
+}
+else if(ortalama > 30 && ortalama <= 50)
+{
+  Console.WriteLine($"{adSoyad} kişisinin harf notu DD ortalaması {ortalama}'dır");
+}
+else if (ortalama > 50 && ortalama <= 70)
+{
+  Console.WriteLine($"{adSoyad} kişisinin harf notu CC ortalaması {ortalama}'dır");
+}
+else if (ortalama > 70 && ortalama <= 80)
+{
+  Console.WriteLine($"{adSoyad} kişisinin harf notu BB ortalaması {ortalama}'dır");
+}
+else if (ortalama > 80 && ortalama <= 100)
+{
+  Console.WriteLine($"{adSoyad} kişisinin harf notu AA ortalaması {ortalama}'dır");
+}
+
+----------------------------------------------------------------------------------------
+
+// 30 kadar FF
+// 30 50 arası DD
+// 50 70 CC
+// 70 80 BB
+// 80 100 AA
+
+Console.WriteLine("Vize notunuzu giriniz");
+int vize = int.Parse(Console.ReadLine());
+
+Console.WriteLine("final notunuzu giriniz");
+int final = int.Parse(Console.ReadLine());
+
+double ortalama = (vize * 0.30) + (final * 0.70);
+
+// kolay kod yazımı sağlayan otomatik kod yazan yapılar code snippet diyoruz.
+
+switch (ortalama)
+{
+	case double ort when ort <= 30 && ort > 0: // aralık varsa when kullanıyoruz
+		Console.WriteLine("FF");
+		break;
+	case double ort when ort > 30 && ort <= 50:
+		Console.WriteLine("DD");
+		break;
+	case double ort when ort > 50 && ort <= 70:
+		Console.WriteLine($"CC ortalama: {ortalama}"); // string literal
+		break;
+	case double ort when ort > 70 && ort <= 80:
+		Console.WriteLine("BB");
+		break;
+	case double ort when ort > 80 && ort <= 100:
+		Console.WriteLine("AA");
+		break;
+	default: // yukarıdaki case durumlarına girmez ise o zaman yapılacak işlemler default da yazılabilir; // - değer 100 den büyük değer için bu case gir.
+		Console.WriteLine("Ortlama 0 dan büyük 100 den küçük olabilir");
+		break;
+}
+
+
