@@ -9,3 +9,26 @@
 //int sayi3 = int.Parse(Console.ReadLine());
 
 // klavyeden girilen 3 sayının toplamnı ekrana yazdıran programın algoritması
+
+----------------------
+
+#region Ornek4
+
+/*
+
+int toplam = 0;
+
+for (int i = 1; i <= 3; i++)
+{
+  Console.WriteLine($"{i}.sayıyı giriniz");
+  int sayi = int.Parse(Console.ReadLine());
+  toplam += sayi;
+  //toplam = toplam + sayi;
+  //toplam *= sayi;
+}
+
+Console.WriteLine($"toplam : {toplam}");
+
+*/
+
+#endregion
