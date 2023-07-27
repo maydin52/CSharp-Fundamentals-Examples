@@ -1,0 +1,99 @@
+/*
+
+Console.WriteLine("kaç elemanlı bir dizi oluşturmak istersiniz");
+int diziElemanSayisi = int.Parse(Console.ReadLine());
+int adet = 0;
+int[] numbers = new int[diziElemanSayisi];
+
+Random rdm = new Random(); // for dışına yazalım döngü dışına yazalım
+
+for (int i = 0; i < numbers.Length; i++)
+{
+  int random = rdm.Next(1, 100);
+  bool isExist = numbers.Any(sayi => sayi == random); // dizideki sayılardan bir random mı
+  bool isExist2 = numbers.Contains(random); // dizide random değer var mı
+  bool isExist3 = false;
+  // aynı dizideki eleman varsa yeniden üret algoritması
+  do
+  {
+
+    isExist3 = false;
+    // 5,7,9,13 => 15,4,3,7,5,9
+    for (int y = 0; y < numbers.Length; y++)
+    {
+      if (numbers[y] == random)
+      {
+        // üretilen dizi de var.
+        // yeniden üret
+        // dizinin i'inci indeksine at
+        isExist3 = true;
+        random = rdm.Next(0, 5);
+        break;
+      }
+    }
+
+  } while (isExist3);
+
+  // aynısı yoksa o zaman random sayıyı diziye atar
+  numbers[i] = random;
+  // diziye atılan değer 3 bölüne bilir mi
+  if (random % 3 == 0) // 3 e bölünen random sayılar
+  {
+    adet++;
+  }
+}
+
+Console.WriteLine(numbers);
+Console.WriteLine($"3'e bölünenlerin adeti : {adet}");
+Console.WriteLine($"{string.Join(',', numbers)}"); // bir dizinin elemanlarını string olarak ekranda göstermek için string.Join kullandık
+
+
+*/
+
+---------------------------------------
+
+// çift ile yapmaya çalışalım
+/*
+
+Console.WriteLine("Kaç elemanlı bir seri oluşturmak isersiniz");
+int diziElemanSayisi2 = int.Parse(Console.ReadLine());
+int adet2 = 0;
+int[] numbers2 = new int[diziElemanSayisi2];
+
+Random rdm2 = new Random();
+
+for (int i = 0; i < numbers2.Length; i++)
+{
+  int random2 = rdm2.Next(1, 13);
+
+  for (int y = 0; y < numbers2.Length; y++)
+  {
+
+    if (numbers2[y] == random2)
+    {
+      // aynısında çıktı
+      // bir önceki adıma geri dön
+      y = 0; // yeni gelen değerin ilk indekse aynısın çıkmadığını bilmediğimden yindex değerini her tekrar da sıfırlamaıyız.
+      random2 = rdm2.Next(1, 13);
+      y--;
+      continue; // continue ile işimiz bittiği için döngünü devamını sağladık
+      // continue adımından sonraki kod blokları atlanır
+    }
+  }
+  // kabul gören random değer ile çalışıyorum
+    numbers2[i] = random2;
+
+    if (random2 % 3 == 0)
+    {
+      adet2++;
+    }
+  
+}
+
+
+Console.WriteLine($"3'e bölünenlerin adeti : {adet2}");
+Console.WriteLine($"{string.Join(',', numbers2)}"); // bir dizinin elemanlarını string olarak ekranda göstermek için string.Join kullandık
+
+*/
+
+--------------------------------------------------------------
