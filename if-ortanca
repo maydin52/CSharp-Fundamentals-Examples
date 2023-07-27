@@ -1,0 +1,101 @@
+// kullanıcıdan istenen 3 sayıdan ortancasını bulan programın algoritmasını yazalalım
+
+#region Ortanca
+
+/*
+
+int sayi1 = 0, sayi2 = 0, sayi3 = 0;
+
+Console.WriteLine("Sayı 1 giriniz");
+sayi1 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Sayı2 giriniz");
+sayi2 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Sayı 3 giriniz");
+sayi3 = int.Parse(Console.ReadLine());
+
+int ort = 0;
+int max = 0;
+int min = 0;
+
+if (sayi1 > sayi2 && sayi1 > sayi3)
+  max = sayi1;
+else if (sayi2 > sayi1 && sayi2 > sayi3)
+  max = sayi2;
+else
+  max = sayi3;
+
+if (sayi1 < sayi2 && sayi1 < sayi3)
+  min = sayi1;
+else if (sayi2 < sayi1 && sayi2 < sayi3)
+  min = sayi2;
+else
+  min = sayi3;
+
+
+if(sayi1 < max  && sayi1 > min)
+{
+  Console.WriteLine("Ortanca sayi1");
+}
+else if (sayi2 < max && sayi2 > min)
+{
+  Console.WriteLine("Ortanca sayi2");
+}
+else if(sayi3 < max && sayi3 > min)
+{
+  Console.WriteLine("Ortanca sayi3");
+}
+else
+{
+  Console.WriteLine("Hepsi eşit");
+}
+
+#endregion
+
+*/
+
+
+#endregion
+
+#region farklıversiyon
+
+/*
+
+int sayi1 = 0, sayi2 = 0, sayi3 = 0;
+
+Console.WriteLine("1. Sayıyı Giriniz");
+sayi1 = int.Parse(Console.ReadLine());
+Console.WriteLine("2. Sayıyı Giriniz");
+sayi2 = int.Parse(Console.ReadLine());
+Console.WriteLine("3. Sayıyı Giriniz");
+sayi3 = int.Parse(Console.ReadLine());
+
+if (sayi1 == sayi2 && sayi2 == sayi3)
+{
+  Console.WriteLine("Sayılar birbirine eşit");
+}
+else
+{
+  if ((sayi1 > sayi2 && sayi1 < sayi3) || (sayi1 > sayi3 && sayi1 < sayi2))
+  {
+    Console.WriteLine($"Ortanca sayı: {sayi1}");
+  }
+  else if ((sayi2 > sayi1 && sayi2 < sayi3) || (sayi2 > sayi3 && sayi2 < sayi1))
+  {
+    Console.WriteLine($"Ortanca sayı: {sayi2}");
+  }
+  else if ((sayi3 > sayi1 && sayi3 < sayi2) && (sayi3 > sayi2 && sayi3 < sayi1))
+  {
+    Console.WriteLine($"Ortanca sayı: {sayi3}");
+  }
+  else
+  {
+    Console.WriteLine("Ortanca değer yoktur.");
+  }
+}
+
+*/
+
+
+#endregion
