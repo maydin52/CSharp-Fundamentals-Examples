@@ -1,0 +1,47 @@
+int[] numbers = new int[10]; // 10 adet elemandan oluşan bir dizi tanımladık
+numbers[0] = 1; // 0.indekse ilk elemana 1 değerini atadık 1
+numbers[1] = 3; // 2
+numbers[2] = 2; // 3
+numbers[3] = 10; // 4
+numbers[4] = 6; // 5
+numbers[5] = 8; // 6
+numbers[6] = 9; // 7
+numbers[7] = 13; // 8
+numbers[8] = 67; // 9
+numbers[9] = 56; // 10
+								 // numbers[10] = 78; // 9.indeks son index 11.eleman
+
+// IndexOutOfRangeException hatasını dizi eleman sayısını aşarsak alırız.
+
+
+for (int index = 0; index < numbers.Length; index++)
+{
+	Console.WriteLine($"{index + 1}. elamanın değeri {numbers[index]}");
+}
+
+// kullanıcıya kaç adet numaradan oluşan bir dizi tanımlamamızı soralım
+// daha sonra kullanıcı sıra ile bu dizi elemanlarına değer girsin
+// program bu girilen değerlerden en büyüğünü ekrana yazdırsın
+
+Console.WriteLine("Kaç elemanı bir dizi oluşturmak istersiniz");
+int elemanSayisi = int.Parse(Console.ReadLine());
+int[] numaraDizisi = new int[elemanSayisi]; 
+
+for (int index = 0; index < numaraDizisi.Length; index++)
+{
+	Console.WriteLine($"{index + 1}. sayıyı giriniz");
+	int sayi = int.Parse(Console.ReadLine());
+	numaraDizisi[index] = sayi;
+
+}
+
+
+Array.Sort(numaraDizisi); // küçükten büyüğe doğru sırala
+Array.Reverse(numaraDizisi); // sıralama sonrasında reverse ettik yani büyükten küçüğe sıraladı.
+Console.WriteLine($"En büyük {numaraDizisi[0]}"); // ilkincisi en büyük
+Console.WriteLine($"En küçük {numaraDizisi[numaraDizisi.Length - 1]}"); // sonuncusu en küçük
+
+// dizinin eleman sayısını kullanıcıya soralım (10 elemanlı) 10 adet random değer üretilecek
+// random üretilen sayılardan 3' bölünenlerin adetini ekrana yazdıran program
+// ekrana 3 adet 3'e bölünen random sayı vardır
+// random üretilen sayılar aynı olamaz (0-100) 3,5,7,8,7,9 (zorunlu değil)
