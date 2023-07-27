@@ -1,0 +1,38 @@
+/*
+
+// klavyeden girilen 5 sayıdan en büyüğünğ bulan programın algoritması 
+// 15 23 45 89 1
+
+
+int max = -9898989;
+int min = 989898989;
+
+for (int i = 1; i <= 5; i++)
+{
+  Console.WriteLine($"{i}.sayı giriniz");
+  int sayi = int.Parse(Console.ReadLine());
+
+  //if(i == 1)
+  //{
+  //  max = sayi;
+  //}
+ 
+  // 3, 7, 2,5
+
+  if(sayi > max && sayi> 0)
+  {
+    max = sayi;
+  }
+  
+  
+  if(sayi < min)
+  {
+    min = sayi;
+  }
+
+}
+
+Console.WriteLine($"EN büyük sayı {max}");
+Console.WriteLine($"EN küçük sayı {min}");
+
+*/
