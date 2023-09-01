@@ -1,0 +1,29 @@
+int HakSayisi = 3;
+do
+{
+    Console.WriteLine("Lütfen Kullanıcı Adınızı Giriniz...");
+    string KullaniciAdi = Console.ReadLine();
+    Console.WriteLine("Lütfen Şifrenizi Giriniz");
+    string Sifre = Console.ReadLine();
+
+    if (KullaniciAdi == "Mehmet" && Sifre == "123")
+    {
+        Console.WriteLine("Hoşgeldiniz");
+        break;
+    }
+    else
+    {
+        Console.WriteLine("Kullanıcı Adı yada Şifre Hatalı");
+
+        if (HakSayisi > 0)
+
+            HakSayisi -= 1;
+
+        if (HakSayisi == 0)
+        {
+            Console.WriteLine("Giriş Hakkınız Bitmiştir.");
+            break;
+        }
+    }
+
+} while (HakSayisi != 3);
